@@ -1,6 +1,6 @@
 # parallax-website
 
-This is a fun front-end website includes parallax scrolling effect where background of a
+This is a fun front-end website includes parallax scrolling effect where background of the
 website scrolls at a slower pace than the foreground.
 This is done using javascript 
 
