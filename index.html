@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>parallax scrolling website</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header id ="header">
+       <a href="#" class="logo">Jungle</a>
+       <ul>
+         <li><a href="#"class="active">Home</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Destination</a></li>
+         <li><a href="#">Contact</a></li>
+       </ul>
+    </header>
+    <section>
+      <h2 id="text"><span>It's time for a new </span><br>Adventure</h2>
+       <img src="img/bird1.png" id="bird1">
+       <img src="img/bird2.png" id="bird2">
+       <img src="img/forest.png" id="forest">
+       <a href="#" id ="btn"> Explore</a>
+       <img src="img/rocks.png" id="rocks">
+       <img src="img/water.png" id="water ">
+    </section>
+    <div class="sec">
+      <h2>Welcome to the new adventure</h2>
+      <p>
+        A slate-grey sky hung heavy over the President James K. Polk Memorial rest area on Interstate 64 in southern Indiana. At the fueling station, eighteen wheelers lined up under bright green lights for diesel and windshield wiper fluid from an army of apathetic attendants. A mother carrying a styrofoam coffee cup emerged from the Kwik Mart, pulling the collar of her neon pink and light purple ski jacket tight around her neck with her free hand and hurrying her two children across the broad expanse of cracked tarmac. A grove of oak trees, damp brown and bare of leaves for months now, peaked above the domed roof of the food court. At the far end of the parking lot, a mountain of exhaust-stained snow towered precariously over a red and yellow dumpster belonging to Solid Waste Disposition Incorporated, Akron, OH. A cacophony of colors and commotion.
+<br>
+Frank eased his Kia into a parking spot and surveyed the scene. He was not like the rest of them, hustling to-and-fro on their way to somewhere else, to grandma’s house for Christmas, perhaps, or home after a work trip in Louisville or Wheeling or Pittsburgh. No. For Frank J. Marone, the President James K. Polk Memorial rest area was the destination.
+<br>
+In front of him, a fifty-foot steel pole held aloft the black and red cowboy hat signage of the Arby’s Corporation, the curved lines of the double-peaked crown and round brim glowed a warm red against the cold of the December day.
+<br><br><br>
+He picked up his phone, smiled, stuck his thumb up, and snapped a selfie. Below the image, he typed, “It’s been twelve years since I started this journey. At last, I come face to face with my white whale (or is it a cod?).” He sent it off to his forty-eight thousand-plus followers and then scrolled through his timeline. Back to the beginning, to 2009, the Roy Rogers outside of Toms River that still served the Cordon Bleu Gold, discontinued nationally in 2005. That one had been pretty easy. Just a quick jaunt down the Garden State Parkway. There and back in a short afternoon. Number nine on the list: the McSalmon Fritters, which he'd found at a barely functioning McDonalds outside of Homer, Alaska. That one had required more doing, an online fundraiser and a series of puddle jumpers.
+<br>
+It had started as a lark, the quest for obscure and discontinued fast food items. Something to do. To pass the time. Shits and giggles. After he'd crossed number five or six off the list of twenty-five sandwiches and tenders and salad shakers, though, the quest had taken over his life, become his identity.
+<br><br>
+Frank set the phone back down on the passenger seat and watched it buzz and ding with congratulatory missives. In front of the Arby’s, a man shuffled back and forth and spoke to himself angrily, a burned-to-the-filter cigarette hanging from the corner of his mouth.
+<br><br>
+Frank was there to meet a man about a sandwich. Gordon Warmbacher, franchisee of sixteen Arby’s restaurants across the upper Midwest and Great Plains, about the legendary Mahalo King Cod Filet, to be precise. The Mahalo King was the last on his list that included the KFC Turkey Tender, the Burger King Ostrich Deluxe, and Taco Bell’s Cool Ranch Gator Taco, served exclusively in Louisiana and the Florida Panhandle. He had dedicated the last twelve years of his life to tracking these items down and reviewing them for his ever-increasing number of social media fans and fast food aficionados.
+<br><br>
+Of all the items on the list, the Mahalo King Cod Filet had proven to be the most elusive. Introduced by the Arby’s Corporation at select stores in 2006, sales had badly underperformed expectations. Reviews were initially poor. People had mocked the incongruity of a New England fish served Hawaiian style. The pineapple slices that sat atop the deep-fried filet smothered in traditional Hawaiian huli-huli sauce would, if left for even a few minutes, soak through the sesame seed bun, leaving it soggy and difficult to pick up. Sales of the sandwich were discontinued after only four months, but it had become something of a cult favorite, with a small but devoted fan club dedicated to getting it back on the menu.
+<br><br>
+There had been tips. Whispers and rumors of rogue Arby's restaurants still serving the sandwich. Frank had followed one dead end lead after another for nearly a year and a half and had been on the brink of giving up when he received a cryptic Direct Message from Gordon. It could be arranged, Gordon said, but Frank would need to be discreet. Details needed to be omitted, a certain degree of anonymity required. Gordon had a lot on the line.
+<br>
+Frank opened his car door and walked briskly toward the Arby’s entrance and past the man with the cigarette, who cursed at Frank under his breath. He entered and looked around. It was mid-afternoon, the quiet time between the lunch and dinner rushes. Brown and tan anti-slip tiling covered the floor in front of a recently-modernized counter manned by three maroon-shirted and bored looking employees. A middle-aged man in thick-rimmed glasses and a mustache waved to him from one of the booths lining the far wall. Gordon stood and extended his hand toward Frank as Frank approached. He smiled broadly. Gordon squeezed Frank's hand firmly and shook once, up and down. The two men slid across the brown vinyl seating across the table from one another.
+<br><br>
+“It’s a real pleasure to meet you,” Gordon said once they had settled in. “I’m a fan of your work. Been reading your blog since… Oh let’s see. Well, at least a couple of years now.” His accent was upper midwestern. Wisconsin. Or Minnesota, perhaps.
+<br><br>
+“That’s very kind of you to say.”
+
+      </p>
+    </div>
+    <script >
+      let text = document.getElementById('text');
+      let bird1 = document.getElementById('bird1');
+      let bird2 = document.getElementById('bird2');
+      let btn = document.getElementById('btn');
+      let rocks = document.getElementById('rocks');
+      let forest = document.getElementById('forest');
+      let water = document.getElementById('water');
+      let header = document.getElementById('header');
+      window.addEventListener('scroll',function(){
+        let value = window.scrollY;
+        text.style.top =50 +value * -0.5+'%';
+        bird1.style.top =value *-1.5+'px';
+        bird1.style.left =value *2+'px';
+        bird2.style.top =value *-1.5+'px';
+        bird2.style.left =value *-5+'px';
+        btn.style.marginTop = value*1.5 +'px';
+        rocks.style.top = value*-0.14 +'px';
+        forest.style.top=value*0.25 +'px';
+        header.style.top = value *0.5+'px';
+      })
+    </script>
+  </body>
+</html>
